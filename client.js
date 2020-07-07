@@ -1,6 +1,3 @@
-const {
-  NUM_CELLS,
-} = require('./lib/constants/constants');
 const protocolUtils = require('./lib/utils/protocol-utils');
 
 const MAX_ITEMS = 4;

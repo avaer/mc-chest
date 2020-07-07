@@ -3,13 +3,6 @@ const {exports: THREE} = self.module;
 self.module = {};
 
 const isosurface = require('isosurface');
-const {
-  NUM_CELLS,
-  OVERSCAN,
-  NUM_CELLS_OVERSCAN,
-
-  DEFAULT_SEED,
-} = require('./lib/constants/constants');
 const protocolUtils = require('./lib/utils/protocol-utils');
 
 const zeroVector = new THREE.Vector3();
@@ -47,7 +40,7 @@ const _distanceToBox = (p, rect) => {
   const dyMax = Math.abs(p.y - rect.max.y);
   const dyDirection = (dyMin <= dyMax) ? -1 : 1;
   const dy = Math.min(dyMin, dyMax);
-  
+
   const dzMin = Math.abs(rect.min.z - p.z);
   const dzMax = Math.abs(p.z - rect.max.z);
   const dzDirection = (dzMin <= dzMax) ? -1 : 1;
