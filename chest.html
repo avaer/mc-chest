@@ -10,20 +10,6 @@
 <script type=module>
 import * as THREE from './three.module.js';
 import {OrbitControls} from './OrbitControls.js';
-import indev from './indev.js';
-import {
-  NUM_CELLS,
-  OVERSCAN,
-  NUM_CELLS_OVERSCAN,
-
-  DEFAULT_SEED,
-
-  NUM_CELLS_HEIGHT,
-  HEIGHT_OFFSET,
-
-  RANGE,
-} from './constants.js';
-import * as protocolUtils from './protocol-utils.js';
 import {BufferGeometryUtils} from './BufferGeometryUtils.js';
 
 const renderer = new THREE.WebGLRenderer({
