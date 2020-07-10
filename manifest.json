@@ -1,6 +1,7 @@
 {
-  "name": "Chest",
-  "description": "Describe your WebXR application",
+  "name": "chest",
+  "description": "WebXR Chest",
   "xr_type": "webxr-site@0.0.1",
-  "start_url": "chest.html"
+  "start_url": "chest.html",
+  "repository": "git@github.com:avaer/chest.git"
 }
